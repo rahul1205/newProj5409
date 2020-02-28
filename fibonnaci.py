@@ -30,9 +30,9 @@ if file:
         output_str =    ""
         for i in range(int(x)):
             output_str += str(fibonacci(i)) + "#"
-        print (output_str.rstrip("#"))
         time_taken = time.time() - start
         to_write = str(i) + "," + str(time_taken) + "," + str(x) + "," + str(output_str) + "\n"
+        print (to_write)
         output.write(to_write)
 
 
