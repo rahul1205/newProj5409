@@ -1,7 +1,6 @@
 
 # import uuid
 import time
-import matplotlib.pyplot as plt
 
 def fibonacci(number): 
     if number <= 1:
