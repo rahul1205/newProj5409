@@ -31,8 +31,8 @@ if file:
         for i in range(int(x)):
             output_str += str(fibonacci(i)) + "#"
         time_taken = time.time() - start
-        to_write = str(i) + "," + str(time_taken) + "," + str(x) + "," + str(output_str) + "\n"
-        print (to_write)
+        to_write = str(i) + "," + str(time_taken) + "," + str(x) + "," + str(output_str.rstrip("|")) + "\n"
+        print (to_write.rstrip("|"))
         output.write(to_write)
 
 
