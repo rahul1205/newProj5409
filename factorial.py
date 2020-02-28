@@ -22,5 +22,6 @@ if file:
         result = factorial(int(x))
         time_taken = time.time() - start
         to_write = str(i) + "," + str(time_taken) + "," + str(x) + "," + str(result) + "\n"
+        print (to_write)
         output.write(to_write)
 # print (y_axis_value)
