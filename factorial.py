@@ -11,7 +11,7 @@ try:
     file = open('input_cases.txt', 'r')
 except:
     pass
-output = open('factorial_output', 'w+')
+output = open('factorial_output.csv', 'w+')
 output.write("RequestID,Time,Number,Result\n")
 
 if file:
@@ -21,6 +21,6 @@ if file:
         start = time.time()
         result = factorial(int(x))
         time_taken = time.time() - start
-        to_write = str(i) + "," str(time_taken) + "," + str(x) + "," + str(result) + "\n"
+        to_write = str(i) + "," + str(time_taken) + "," + str(x) + "," + str(result) + "\n"
         output.write(to_write)
 # print (y_axis_value)
